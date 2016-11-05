@@ -26,3 +26,6 @@ $ npm i -D browser-sync
 
 ``` 
 
+## v4.3.0 (modular 模块化)
+
+https://d3js.org/d3.v4.min.js
