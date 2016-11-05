@@ -1,0 +1,22 @@
+{
+    "name": "d3-app-for-data-visualization",
+    "version": "1.0.1",
+    "description": "D3 App for Data Visualization ",
+    "main": "index.js",
+    "scripts": {
+        "start": "browser-sync start -s -f index.html src --no-ui --no-notify"
+    },
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "keywords": [
+        "D3",
+        "data",
+        "visualization",
+        "egghead"
+    ],
+    "homepage": "",
+    "author": "xgqfrms, webgeeker",
+    "license": "MIT"
+}
