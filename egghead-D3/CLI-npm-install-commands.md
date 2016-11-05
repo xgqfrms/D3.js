@@ -22,5 +22,7 @@ common options: [-S|--save|-D|--save-dev|-O|--save-optional] [-E|--save-exact] [
 ```sh
 $ npm i -D browser-sync
 
+# -D|--save-dev
+
 ``` 
 
