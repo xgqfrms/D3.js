@@ -8,7 +8,7 @@
     },
     "repository": {
         "type": "git",
-        "url": ""
+        "url": "git+https://github.com/xgqfrms/D3.js.git"
     },
     "keywords": [
         "D3",
@@ -16,7 +16,7 @@
         "visualization",
         "egghead"
     ],
-    "homepage": "",
+    "homepage": "https://github.com/xgqfrms/D3.js",
     "author": "xgqfrms, webgeeker",
     "license": "MIT"
 }
