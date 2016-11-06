@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>print js</title>
+</head>
+<body>
+    <div>
+        <small class="description">求职意向：</small><span class="job" class="highlight">前端工程师</span>
+    </div>
+    <a id="print" href="javascript:;">print it</a>
+    <script>
+        t("#print").click(function(){
+            try {
+                print()
+            } catch (t) {
+                alert("Your browser does not support `print()` method.")
+            }
+        });
+    </script>
+</body>
+</html>
