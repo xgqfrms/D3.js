@@ -6,3 +6,10 @@
 
 
 
+## blogs
+
+[https://bost.ocks.org/mike/](https://bost.ocks.org/mike/)
+
+## update pattern
+
+[http://bl.ocks.org/mbostock/3808218](http://bl.ocks.org/mbostock/3808218)

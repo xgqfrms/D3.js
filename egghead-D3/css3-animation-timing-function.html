@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 animation-timing-function</title>
+    <style>
+        .div{
+            width: 100px;
+            height: 50px;
+            background: red;
+            color: white;
+            font-weight: bold;
+            position: relative;
+            animation: mymove 3s infinite;
+        }
+        @keyframes mymove {
+            from {left: 0px;}
+            to {left: 700px;}
+        }
+        #div1 {animation-timing-function: cubic-bezier(0,0,0.25,1);}
+        #div2 {animation-timing-function: cubic-bezier(0.25,0.1,0.25,1);}
+        #div3 {animation-timing-function: cubic-bezier(0.42,0,1,1);}
+        #div4 {animation-timing-function: cubic-bezier(0,0,0.58,1);}
+        #div5 {animation-timing-function: cubic-bezier(0.42,0,0.58,1);}
+        body{
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>CSS3 animation-timing-function</h1>
+        <div>
+            <div id="div1" class="div">linear</div>
+            <div id="div2" class="div">ease</div>
+            <div id="div3" class="div">ease-in</div>
+            <div id="div4" class="div">ease-out</div>
+            <div id="div5" class="div">ease-in-out</div>
+        </div>
+        <div>
+            <pre>
+                animation-timing-function:
+                <mark>ease    </mark>
+                Default value. Specifies a transition effect with a slow start, then fast, then end slowly (equivalent to cubic-bezier(0.25,0.1,0.25,1))
+                <mark>linear  </mark>
+                Specifies a transition effect with the same speed from start to end (equivalent to cubic-bezier(0,0,1,1))
+                <mark>ease-in </mark>
+                Specifies a transition effect with a slow start (equivalent to cubic-bezier(0.42,0,1,1))
+                <mark>ease-out</mark>
+                Specifies a transition effect with a slow end (equivalent to cubic-bezier(0,0,0.58,1))
+                <mark>ease-in-out</mark>
+                Specifies a transition effect with a slow start and end (equivalent to cubic-bezier(0.42,0,0.58,1))
+                <mark>step-start</mark>
+                Equivalent to steps(1, start)
+                <mark>step-end</mark>
+                Equivalent to steps(1, end)
+                <mark>steps(int,start|end)</mark>
+                Specifies a stepping function, with two parameters. 
+                The first parameter specifies the number of intervals in the function. 
+                It must be a positive integer (greater than 0). 
+                The second parameter, which is optional, is either the value "start" or "end", and specifies the point at which the change of values occur within the interval. 
+                If the second parameter is omitted, it is given the value "end"
+                <mark>cubic-bezier(n,n,n,n)</mark>
+                Define your own values in the cubic-bezier function. Possible values are numeric values from 0 to 1
+                <mark>initial </mark>
+                Sets this property to its default value. Read about initial
+                <mark>inherit </mark>
+                Inherits this property from its parent element. Read about inherit
+            </pre>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,4 +1,10 @@
 /*test.scss*/
+div h1{
+    font-family: Lobster,Monospace, Serif, Sans-Serif;
+    text-shadow: 3px 5px 7px #000;
+    font-size: 3em;
+    color: #0ff;
+}
 div{
     display: block;
     border: 1px solid #000;
@@ -51,4 +57,21 @@ a.action{
 button{
     display: block;
     float: left;
+}
+
+/* new css */
+#box{
+    display: none;
+}
+.chart{
+    background: rgba(0,0,0,0.7);
+    border: 1px solid #000;
+    min-width: 200px;
+    min-height: 350px;
+}
+.chart div{
+    background: rgba(0,0,0,1);
+    color: #00f;
+    border: 1px groove #fff auto;
+    margin: 2px auto;
 }

@@ -18,6 +18,17 @@ gulp.task('sass-watch', ['sass'], function (done) {
     done();
 });
 
+//html
+gulp.task('html', function () {
+    return gulp.src('./*.html')
+    // .pipe(browserify())
+    .pipe(gulp.dest('./'));
+});
+gulp.task('html-watch', ['html'], function (done) {
+    browserSync.reload();
+    done();
+});
+
 // process JS files and return the stream.
 gulp.task('js', function () {
     return gulp.src('js/*.js')
@@ -48,9 +59,10 @@ gulp.task('serve', ['js', 'sass'], function () {
     // all browsers reload after tasks are complete.
     gulp.watch("js/*.js", ['js-watch']);
     gulp.watch("sass/*.scss", ['sass-watch']);
+    gulp.watch("./*.html", ['html-watch']);
 });
 
-gulp.task('default', ['serve', 'sass-watch', 'js-watch']);
+gulp.task('default', ['serve', 'sass-watch', 'js-watch', 'html-watch']);
 // gulp.task('default', ['serve']);
 
 /*
