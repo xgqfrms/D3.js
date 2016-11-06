@@ -3,20 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <title>print js</title>
+    <!-- https://idiotwu.me/resume/ -->
 </head>
 <body>
     <div>
         <small class="description">求职意向：</small><span class="job" class="highlight">前端工程师</span>
     </div>
+    <a href="javascript:void(alert('Hello, void!'));">
+        <code>
+            javascript:void(alert('Hello, void!'));
+        </code>
+        <pre>
+            Array-function
+            rightnow-execute-function
+        </pre>
+    </a>
+    <br>
     <a id="print" href="javascript:;">print it</a>
+    <br>
+    <a id="print2" href="javascript:void(0);">print2 it</a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script>
-        t("#print").click(function(){
-            try {
-                print()
-            } catch (t) {
-                alert("Your browser does not support `print()` method.")
+        /*
+        ! function(t) {
+            t("#print").click(function() {
+                try {
+                    print()
+                } catch (t) {
+                    alert("Your browser does not support `print()` method.")
+                }
+            })
+        }(window.jQuery);
+        */
+        // ES6
+        /**/
+        window.onload = ((t) => {
+            let p = document.getElementById('print');
+            p.onclick = () => {
+                try {
+                    print();
+                } catch (t) {
+                    alert("Your browser does not support `print()` method.");
+                }
             }
-        });
+        })();
+        
+        /*
+        jquery ID selector !== DOM selector
+        ("#print") !=== getElementById("print")
+        */
+
+        /*
+        console.log(document.getElementById("print"));
+        window.onload = function(t){
+            let p = document.getElementById('print');
+            p.onclick = function(){
+                try {
+                    print();
+                } catch(t) {
+                    alert("Your browser does not support `print()` method.");
+                }
+            };
+        }();
+        */
     </script>
 </body>
 </html>

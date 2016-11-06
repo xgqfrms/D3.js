@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>download</title>
+    <!-- https://idiotwu.me/resume/ -->
+</head>
+<body>
+    <div>
+        <h1>a download</h1>
+    </div>
+    <a href="https://raw.githubusercontent.com/xgqfrms-GitHub/webgeeker/gh-pages/CSS3/bg-images-animation/bg1.png" download="filename">github download : filename error</a><br>
+    <a href="./bg1.png" download="filename">server & filename OK</a><br>
+    <a href="./bg1.png" download="filename.jpg">server & filename.jpg OK</a><br>
+    <a href="./bg1.png" download="filename.gif">server & filename.gif OK</a><br>
+    <a href="./bg1.png" download="filename.pdf">server & filename.pdf OK</a><br>
+    <a href="./bg1.png" download="filename.exe">server & filename.exe OK</a><br>
+    <div>
+        <pre>
+            <h3>修改文件名的必要条件：</h3>
+            1. 要放在server上
+            2. 使用相对路径
+            3. 可以指定文件扩展名.jpg, .gif ...
+        </pre>
+    </div>
+    <a href="https://idiotwu.me/resume/assets/resume.pdf" download="filename.pdf">pdf</a><br>
+    <a href="./resume.pdf" download="filename.pdf">server & filename.pdf OK</a>
+</body>
+</html>
